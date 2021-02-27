@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                         heroesList = gson.fromJson(jsonArray.toString(), listType);
 
                         for(Heroe hero: heroesList){
-                            Log.d(TAG, "heroesRequests: nombre: " + hero.getName() + ", Imagen: " + hero.getImageurl());
+                            Log.d(TAG, "HEORES: nombre: " + hero.getName() + ", Imagen: " + hero.getImageurl());
                         }
 
                         heroRecyclerView = findViewById(R.id.rbHeroes);
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
 
                          */
 
-                        Log.d(TAG, "heroesRequests: Héroes cargados");
+
                     } catch (JSONException e) {
                         Log.d(TAG, "heroesRequests: " + e.getMessage());
                     }
@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         requestQueue.add(jsonRequest);
-        Log.d(TAG, "heroesRequests: Pasó request");
+
 
 
 
